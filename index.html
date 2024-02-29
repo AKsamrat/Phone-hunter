@@ -40,25 +40,59 @@
 
       <label class="bg-slate-100 flex items-center  gap-2 w-72 lg:w-[700px] rounded-l-xl justify-between">
         <img src="./images/Frame (2).svg" alt="">
-        <input id="search-input" type="text" class="bg-slate-100 w-36 lg:w-96" placeholder="Enter your text" />
+        <input id="search-input" type="text" class="bg-slate-100 w-36 lg:w-full" placeholder="Enter your text" />
         <button onclick="searchPhone()" class="btn btn-accent bg-[#0D6EFD] text-white ">search</button>
 
       </label>
     </section>
+    <div id="spinner" class="hidden text-center mt-40">
+      <span class="loading loading-spinner text-error"></span>
+    </div>
     <div id="phone-container" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
       <!-- <div class="p-4 border-slate-200 rounded-lg flex flex-col justify-center items-center border-2 mt-6 space-y-4 ">
-        <div class="bg-[#0D6EFD0D] items-center rounded-lg">
-          <img src="./images/pngwing 3.png" alt="">
-        </div>
-        <h3 class="font-bold text-2xl text-center">Iphone 13 Pro Max</h3>
-        <p class="text-[18px] font-normal text-center">There are many variations of passages of available, but the
-          majority have suffered</p>
-        <span class="font-bold text-2xl">$999</span>
-        <button class="btn btn-accent bg-[#0D6EFD] text-white ">Show details</button>
-      </div> -->
+          <div class="bg-[#0D6EFD0D] items-center rounded-lg">
+            <img src="./images/pngwing 3.png" alt="">
+          </div>
+          <h3 class="font-bold text-2xl text-center">Iphone 13 Pro Max</h3>
+          <p class="text-[18px] font-normal text-center">There are many variations of passages of available, but the
+            majority have suffered</p>
+          <span class="font-bold text-2xl">$999</span>
+          <button class="btn btn-accent bg-[#0D6EFD] text-white ">Show details</button>
+        </div> -->
 
     </div>
+    <div class=" flex justify-center mt-5">
+      <button onclick="showAllBtn()" id="show-all" class="btn btn-accent bg-[#0D6EFD] text-white hidden ">Show
+        All</button>
+
     </div>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+      <div id="detail-container" class="modal-box w-4/6 h-full">
+        <!-- <div class="bg-[#0D6EFD0D] items-center rounded-lg flex justify-center">
+          <img src="./images/pngwing 2.png" alt="">
+        </div>
+        <h3 class="font-bold text-lg">Hello!</h3>
+        <p class="py-4">It is a long established fact that a reader will be distracted by the readable content of a page
+          when looking at its
+          layout.</p>
+        <p><span class="font-bold text-lg">Storage:</span></p>
+        <p><span class="font-bold text-lg">Display Size:</span></p>
+        <p><span class="font-bold text-lg">Chipset:</span></p>
+        <p><span class="font-bold text-lg">Memory:</span></p>
+        <p><span class="font-bold text-lg">Slug:</span></p>
+        <p><span class="font-bold text-lg">Release Date:</span></p>
+
+        <div class="modal-action ">
+          <form method="dialog"> -->
+        <!-- if there is a button in form, it will close the modal -->
+        <!-- <button class="btn bg-[#DC3545] px-8 text-white">Close</button>
+          </form>
+        </div> -->
+      </div>
+    </dialog>
+
 
   </main>
   <footer>
